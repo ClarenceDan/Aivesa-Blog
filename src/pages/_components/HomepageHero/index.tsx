@@ -40,17 +40,17 @@ function Logos() {
 
   const logos: IconProps[] = [
     {
-      icon: 'logos:vue',
-      style: { left: '1%', top: '1%' },
+      icon: 'logos:python',
+      style: { left: '14%', top: '16%' },
     },
     {
-      icon: 'logos:nuxt-icon',
+      icon: 'logos:nextjs-icon',
       style: { left: '4%', top: '5%' },
     },
 
     {
       icon: 'logos:react',
-      style: { right: '2%', top: '11%' },
+      style: { right: '20%', top: '11%' },
     },
     {
       icon: 'logos:nextjs-icon',
@@ -63,16 +63,16 @@ function Logos() {
     },
     {
       icon: 'logos:typescript-icon',
-      style: { top: '9%', left: '58%' },
+      style: { top: '19%', left: '58%' },
     },
 
     {
-      icon: 'logos:nodejs-icon-alt',
+      icon: 'logos:openai-icon',
       style: { top: '15%', left: '30%' },
     },
     {
-      icon: 'logos:nestjs',
-      style: { top: '20%', left: '38%' },
+      icon: 'logos:cloudflare-icon',
+      style: { top: '30%', left: '38%' },
     },
 
     {
@@ -82,11 +82,11 @@ function Logos() {
 
     {
       icon: 'logos:visual-studio-code',
-      style: { bottom: '25%', right: '5%' },
+      style: { bottom: '35%', right: '10%' },
     },
     {
       icon: 'logos:docusaurus',
-      style: { bottom: '1%', left: '1%' },
+      style: { bottom: '16%', left: '20%' },
     },
   ]
 

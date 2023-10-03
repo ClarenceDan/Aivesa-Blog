@@ -1,7 +1,7 @@
 // @ts-check
 
 const path = require('path')
-const beian = '闽ICP备2020017848号-2'
+const beian = '暂无'
 
 const announcementBarContent = ''
 
