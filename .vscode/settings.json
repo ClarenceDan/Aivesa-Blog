@@ -10,5 +10,18 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "stylelint.validate": ["css", "less", "postcss", "scss", "sass"]
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "scss",
+    "sass"
+  ],
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+    "activityBar.background": "#2B2F23",
+    "titleBar.activeBackground": "#3C4231",
+    "titleBar.activeForeground": "#FBFBFA"
+  }
 }

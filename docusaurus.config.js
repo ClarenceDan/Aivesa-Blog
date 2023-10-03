@@ -59,17 +59,17 @@ module.exports = async function createConfigAsync() {
         items: [
           {
             label: '博客',
-            position: 'right',
+            position: 'left',
             to: 'blog',
           },
           {
             label: '项目',
-            position: 'right',
+            position: 'left',
             to: 'project',
           },
           {
             label: '更多',
-            position: 'right',
+            position: 'left',
             items: [
               { label: '归档', to: 'blog/archive' },
               { label: '笔记', to: 'docs/skill' },
