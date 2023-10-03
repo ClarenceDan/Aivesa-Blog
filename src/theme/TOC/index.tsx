@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import TOCItems from '@theme/TOCItems'
 import type { Props } from '@theme/TOC'
 import styles from './styles.module.css'
+import SidebarAd from '../../components/SidebarAd'
 import { useReadPercent } from '@site/src/hooks/useReadPercent'
 
 const LINK_CLASS_NAME = 'table-of-contents__link toc-highlight'
@@ -15,6 +16,7 @@ export default function TOC({ className, ...props }: Props): JSX.Element {
   return (
     <motion.div
       className={clsx(styles.tableOfContents, 'thin-scrollbar', className)}
+
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{
@@ -24,6 +26,9 @@ export default function TOC({ className, ...props }: Props): JSX.Element {
         duration: 0.3,
       }}
     >
+      <div>
+      <SidebarAd position="table_of_contents" />
+      </div>
       <TOCItems
         {...props}
         linkClassName={LINK_CLASS_NAME}

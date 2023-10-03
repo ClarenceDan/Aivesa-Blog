@@ -18,9 +18,9 @@ function SiteInfo() {
       <CodeBlock language="jsx">
         {`{
   // 本站信息
-  title: '愧怍的小站',
-  description: '道阻且长，行则将至',
-  avatar: 'https://kuizuo.cn/img/logo.png'
+  title: 'Aivesa Wiki',
+  description: '一个用心制作的AI知识站',
+  avatar: 'https://wiki.aivesa.com/img/logo.png'
 }`}
       </CodeBlock>
     </div>

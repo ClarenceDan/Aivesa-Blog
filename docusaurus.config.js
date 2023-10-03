@@ -8,13 +8,13 @@ const announcementBarContent = ''
 module.exports = async function createConfigAsync() {
   /** @type {import('@docusaurus/types').Config} */
   return {
-    title: '愧怍的小站',
-    url: 'https://kuizuo.cn',
+    title: 'Aivesa Wiki',
+    url: 'https://wiki.aivesa.com',
     baseUrl: '/',
     favicon: 'img/favicon.ico',
-    organizationName: 'kuizuo',
-    projectName: 'blog',
-    tagline: '道阻且长，行则将至',
+    organizationName: 'aivesa',
+    projectName: 'aivesa-wiki',
+    tagline: 'Aivesa 官方文档',
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     themeConfig: {
       // announcementBar: {
@@ -24,11 +24,11 @@ module.exports = async function createConfigAsync() {
       metadata: [
         {
           name: 'keywords',
-          content: '愧怍, kuizuo',
+          content: 'Aivesa, 艾维莎',
         },
         {
           name: 'keywords',
-          content: 'blog, javascript, typescript, node, react, vue, web',
+          content: 'AI, openai, chatGPT, gpt-4, llm,',
         },
         {
           name: 'keywords',
@@ -45,37 +45,41 @@ module.exports = async function createConfigAsync() {
           tagName: 'meta',
           attributes: {
             name: 'description',
-            content: '愧怍的个人博客',
+            content: 'Aivesa 官方知识库',
           },
         },
       ],
       navbar: {
         logo: {
-          alt: '愧怍',
-          src: 'img/logo.webp',
-          srcDark: 'img/logo.webp',
+          alt: 'Aivesa',
+          src: 'img/logo.png',
+          srcDark: 'img/logo.png',
         },
         hideOnScroll: true,
         items: [
           {
-            label: '博客',
+            label: '👋Aivesa 简介',
             position: 'left',
-            to: 'blog',
+            to: 'docs/aivesa',
           },
           {
-            label: '项目',
+            label: '👋对话教程',
             position: 'left',
-            to: 'project',
+            to: 'docs/llm',
+          },
+          {
+            label: '👋绘画教程',
+            position: 'left',
+            to: 'docs/midjourney',
           },
           {
             label: '更多',
             position: 'left',
             items: [
+              { label: '新闻', to: 'blog' },
+              { label: '项目', to: 'project' },
               { label: '归档', to: 'blog/archive' },
-              { label: '笔记', to: 'docs/skill' },
-              { label: '资源', to: 'resource' },
               { label: '友链', to: 'friends' },
-              { label: '工具推荐', to: 'docs/tools' },
             ],
           },
           {
@@ -92,9 +96,6 @@ module.exports = async function createConfigAsync() {
             items: [
               { label: '博客', to: 'blog' },
               { label: '归档', to: 'blog/archive' },
-              { label: '技术笔记', to: 'docs/skill' },
-              { label: '实战项目', to: 'project' },
-              { label: '前端示例', to: 'https://example.kuizuo.cn' },
             ],
           },
           {
@@ -103,18 +104,12 @@ module.exports = async function createConfigAsync() {
               { label: '关于我', to: '/about' },
               { label: 'GitHub', href: 'https://github.com/kuizuo' },
               { label: 'Twitter', href: 'https://twitter.com/kuizuo' },
-              {
-                label: '掘金',
-                href: 'https://juejin.cn/user/1565318510545901',
-              },
-              { label: 'Discord', href: 'https://discord.gg/M8cVcjDxkz' },
             ],
           },
           {
             title: '更多',
             items: [
               { label: '友链', position: 'right', to: 'friends' },
-              { label: '导航', position: 'right', to: 'resource' },
               // { label: '我的站点', position: 'right', to: 'website' },
               {
                 html: `<a href="https://docusaurus.io/zh-CN/" target="_blank"><img style="height:50px;margin-top:0.5rem" src="/img/buildwith.png" /><a/>`,
@@ -122,7 +117,7 @@ module.exports = async function createConfigAsync() {
             ],
           },
         ],
-        copyright: `<p><a href="http://beian.miit.gov.cn/" >${beian}</a></p><p>Copyright © 2020 - PRESENT 愧怍 Built with Docusaurus.</p>`,
+        copyright: `<p>Copyright © 2023 - Aivesa Wiki</p>`,
       },
       algolia: {
         appId: 'GV6YN1ODMO',
@@ -225,8 +220,8 @@ module.exports = async function createConfigAsync() {
             defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
           feedOptions: {
             type: 'all',
-            title: '愧怍',
-            copyright: `Copyright © ${new Date().getFullYear()} 愧怍 Built with Docusaurus.<p><a href="http://beian.miit.gov.cn/" class="footer_lin">${beian}</a></p>`,
+            title: 'Aivesa Wiki',
+            copyright: `Copyright © ${new Date().getFullYear()} Aivesa Wiki Built with Docusaurus.`,
           },
         },
       ],

@@ -61,6 +61,7 @@
 
   color: transparent;
   background-clip: text;
+  font-weight: 600;
 }
 
 .wave {
@@ -197,6 +198,7 @@
 }
 
 .button {
+  color:azure;
   position: relative;
   z-index: 1;
   align-items: center;
@@ -207,7 +209,7 @@
   font-weight: 600;
   border: 1px solid hsl(0deg 0% 16% / 10%);
 
-  background-color: #f9fafb;
+  background-color: #3cad6e;
   border-radius: 16px;
 
   &:hover {

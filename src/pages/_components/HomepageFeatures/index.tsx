@@ -19,25 +19,24 @@ const FeatureList: FeatureItem[] = [
   {
     title: translate({
       id: 'homepage.feature.developer',
-      message: 'TypeScript 全栈工程师',
+      message: '全面的知识库',
     }),
     Svg: WebDeveloperSvg,
     description: (
       <>
-        作为一名 TypeScript 全栈工程师，秉着能用 TS 绝不用 JS
-        的原则，为项目提供类型安全的保障，提高代码质量和开发效率。
+        Aivesa 知识库学习并吸收了大量学习资料，并基于自身产品实践进行优化，从而提供更贴近使用环境的知识库内容。
       </>
     ),
   },
   {
     title: translate({
       id: 'homepage.feature.spider',
-      message: '会点逆向 & 爬虫',
+      message: '人工智能探索',
     }),
     Svg: SpiderSvg,
     description: (
       <>
-        作为一名曾学习与实践逆向工程两年半的开发者，对于逆向工程有着浓厚的兴趣，同时造就了超凡的阅读代码能力。没有看不懂的代码，只有不想看的代码。
+        Aivesa致力于探索人类与人工智能之间的联系，希望能简化人类与人工智能交流的过程。
       </>
     ),
   },
@@ -49,7 +48,7 @@ const FeatureList: FeatureItem[] = [
     Svg: OpenSourceSvg,
     description: (
       <>
-        作为一名开源爱好者，积极参与开源社区，为开源项目贡献代码，希望有生之年能够构建出一个知名的开源项目。
+        Aivesa 基于开源社区成长，我们将所有受益的开源代码列出在 Friends 页面。
       </>
     ),
   },
@@ -75,7 +74,7 @@ export default function HomepageFeatures(): JSX.Element {
       className={clsx(styles.featureContainer, 'container padding-vert--sm')}
     >
       <SectionTitle icon={'ri:map-pin-user-line'}>
-        <Translate id="homepage.feature.title">个人特点</Translate>
+        <Translate id="homepage.feature.title">Feature</Translate>
       </SectionTitle>
       <div className={clsx('row', styles.features)}>
         {FeatureList.map((props, idx) => (

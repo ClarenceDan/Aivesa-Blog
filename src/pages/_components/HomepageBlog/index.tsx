@@ -63,7 +63,7 @@ export default function BlogRecent(): JSX.Element {
   })
 
   if (blogData.length === 0) {
-    return <>作者还没有写过博客哦</>
+    return <>最近还没有内容更新哦！</>
   }
 
   return (
@@ -71,7 +71,7 @@ export default function BlogRecent(): JSX.Element {
       className={clsx('container padding-vert--sm', styles.blogContainer)}
     >
       <SectionTitle icon="ri:quill-pen-line" href={'/blog'}>
-        <Translate id="homepage.blog.title">近期博客</Translate>
+        <Translate id="homepage.blog.title">近期更新</Translate>
       </SectionTitle>
       <div ref={ref} className={clsx('row', styles.list)}>
         {posts.map((postGroup, index) => (

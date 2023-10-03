@@ -142,7 +142,8 @@ function Name() {
         e.currentTarget.style.setProperty('--y', `${e.clientY}px`)
       }}
     >
-      <Translate id="homepage.hero.greet">你好! 我是</Translate>
+      <span className={styles.wave}>👋</span>
+      <Translate id="homepage.hero.greet">Hi! 这里是</Translate>
       <span
         className={styles.name}
         onMouseMove={e => {
@@ -151,9 +152,9 @@ function Name() {
           e.currentTarget.style.setProperty('--positionY', `${bounding.y}px`)
         }}
       >
-        <Translate id="homepage.hero.name">愧怍</Translate>
+        <Translate id="homepage.hero.name">Aivesa Wiki</Translate>
       </span>
-      <span className={styles.wave}>👋</span>
+
     </motion.div>
   )
 }
@@ -170,7 +171,7 @@ export default function Hero() {
           variants={variants}
         >
           <Translate id="homepage.hero.text">
-            {`在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。`}
+            {`在这里包含了 Aivesa 的基本使用方法，进阶使用教程，希望能对你的 AI 之旅有所帮助！`}
           </Translate>
         </motion.p>
         <motion.div
@@ -179,7 +180,6 @@ export default function Hero() {
           animate="visible"
           variants={variants}
         >
-          <SocialLinks />
         </motion.div>
 
         <motion.div
@@ -192,7 +192,7 @@ export default function Hero() {
           <div className={styles.outer}>
             <div className={styles.gradient} />
             <a className={styles.button} href={'./about'}>
-              <Translate id="hompage.hero.introduce">自我介绍</Translate>
+              <Translate id="hompage.hero.introduce">开始探索之旅</Translate>
             </a>
           </div>
         </motion.div>
